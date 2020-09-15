@@ -20,7 +20,7 @@ def convert_img(image_path, target_size=(128,128)):
     img_arr_img.append(image)
     return np.asarray(img_arr_img)
 
-reconstructed_model = keras.models.load_model("/home/dlinux/Desktop/D/AI PBL project/pretrained models/my_h5_model.h5")
+reconstructed_model = keras.models.load_model("/home/dlinux/Desktop/D/AI PBL project/pretrained models/cnn_malaria.h5")
 
 image_path = '/home/dlinux/Desktop/D/AI PBL project/cell_images/Uninfected/C1_thinF_IMG_20150604_104722_cell_73.png'
 #image_path = '/home/dlinux/Desktop/D/AI PBL project/cell_images/Parasitized/C33P1thinF_IMG_20150619_115808a_cell_205.png'
