@@ -23,7 +23,7 @@ def convert_img(image_path, target_size=(128,128)):
 reconstructed_model = keras.models.load_model("../AI-diseases-prediction-master/pretrained models/cnn_malaria.h5")
 
 image_path = '../AI-diseases-prediction-master/cell_images/Uninfected/C1_thinF_IMG_20150604_104722_cell_73.png'
-#image_path = '../AI PBL project/cell_images/Parasitized/C33P1thinF_IMG_20150619_115808a_cell_205.png'
+#image_path = '../AI-diseases-prediction-master/cell_images/Parasitized/C33P1thinF_IMG_20150619_115808a_cell_205.png'
 Xtest = convert_img(image_path)
 image_result = reconstructed_model.predict(Xtest)
 if(image_result > 0.5):
