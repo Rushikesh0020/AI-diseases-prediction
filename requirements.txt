@@ -7,3 +7,4 @@ keras
 tensorflow
 matplotlib
 opencv-python
+Werkzeug==1.0.1
