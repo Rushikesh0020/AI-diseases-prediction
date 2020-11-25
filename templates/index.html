@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Attorney Assistant</title>
+  <title>Disease prediictor</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -117,7 +117,7 @@
 
     <!-- Full Page Intro -->
     <div class="view"
-      style="background-image: url('http://getwallpapers.com/wallpaper/full/f/e/5/944533-free-download-soothing-background-1920x1080-for-retina.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      style="background-image: url('https://eskipaper.com/images/minimalist-wallpaper-26.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
       <!-- Mask & flexbox options-->
       <div class="mask align-items-center">
         <!-- Content -->
@@ -133,7 +133,7 @@
                   <div class="text-center">
                     <img src="{{url_for('static', filename='aa.png')}}" class="mx-auto mb-1 img-fluid z-depth-1 rounded-circle" style="width: 100px; height: 100px;" alt="Logo">
                     <h1 class="h1-responsive" style="font-family: 'Jost', sans-serif;">
-                      Attorney Assistant</h1>
+                      Disease predictor</h1>
                   </div>
                   <!--Body-->
                   <form role="form" enctype="multipart/form-data" method='POST' action='/' id="mainForm">
@@ -144,14 +144,14 @@
                         </div>
                         <div class="custom-file">
                           <input type="file" name="file" class="form-control custom-file-input" aria-describedby="fileInput" id="file" required>
-                          <label class="custom-file-label" style="overflow-y: hidden;" for="fileInput">.pdf files only</label>
+                          <label class="custom-file-label" style="overflow-y: hidden;" for="fileInput">image files only</label>
                         </div>
                       </div>
                       <!--<textarea name="text" class="form-control" id="text-box" placeholder="Enter Text" style="max-width: 1800px; height: 500px" autofocus required></textarea>-->
                       <!-- <input type="file" name="file" class="form-control" id="file" required> -->
 
                       <select id="methodSelector" class="browser-default custom-select" form="mainForm" name="methodSelected" required>
-                        <option selected value="">Choose a summarization method:</option>
+                        <option selected value="">Choose image type:</option>
                         <option value="malaria">Malaria cell image</option>
                         <option value="xray">Chest x-ray</option>
                       </select>
@@ -159,7 +159,7 @@
                     </div>
 
                     <div class="text-center mt-4">
-                      <button type="submit" class="btn text-white waves-effect waves-light blue-rounded" value="Upload">Summarize</button>
+                      <button type="submit" class="btn text-white waves-effect waves-light blue-rounded" value="Upload">Predict</button>
                     </div>
                   </form>
                   <br>
@@ -179,7 +179,7 @@
                   <p>
                   <div class="container">
                     <div id="results" style="margin: 10px">
-                      <h4 class="text-center">Summary</h4>
+                      <h4 class="text-center">Output</h4>
                       <br>
                       <hr class="hr-dark">
                       {{ results }}
@@ -189,7 +189,7 @@
                   {% else %}
                   <div class="container">
                     <div id="resultsPlaceholder" style="border: 3px dotted #c3c3c3;">
-                      <h5 class="p-5 text-center" style="color: #aaaaaa;">Summary will appear here</h5>
+                      <h5 class="p-5 text-center" style="color: #aaaaaa;">The results will appear here</h5>
                     </div>
                   </div>
                   {% endif %}
